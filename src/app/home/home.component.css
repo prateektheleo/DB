@@ -1,0 +1,382 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.banner .bg {
+    width: 100%;
+    height: 100%;
+}
+
+.logo {
+    max-width: 450px;
+    /*   */
+    position: absolute;
+    margin: auto;
+    /* padding: auto; */
+    left: 0;
+    right: 0;
+    top: 70px;
+    padding-bottom: 1%;
+}
+
+.logo img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.logo .text {
+    text-align: center;
+    color: white;
+    position: absolute;
+}
+
+.logo .text h1 {
+    font-size: 60px;
+    margin-top: -25px;
+}
+
+.logo .text h3 {
+    margin-top: -20px;
+}
+
+.updates {
+    background: rgba(255, 0, 0, 0.829);
+    color: white;
+    height: auto;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.about {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.about .left-bg {
+    height: 100%;
+    width: 70%;
+}
+
+.about .about-db {
+    position: absolute;
+    color: #244C8D;
+    margin-top: -500px;
+    margin-left: 72%;
+}
+
+.about .about-db h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.about .about-db .about-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.about .about-db .about-logo img {
+    height: 100%;
+    width: 100%;
+}
+
+.about .about-db button {
+    background: #244C8D;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.about .about-left {
+    width: 55%;
+    position: absolute;
+    color: white;
+    margin-top: -480px;
+    font-size: 26px;
+    margin-left: 25px;
+}
+
+.why {
+    position: relative;
+    height: 550px;
+    width: 100%;
+}
+
+.why h1 {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    color: #1E5D99;
+}
+
+.why .why-img {
+    position: absolute;
+    height: 450px;
+    width: 700px;
+    margin-left: 25%;
+}
+
+.why .why-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.reward {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+.reward h1 {
+    width: 100%;
+    font-size: 40px;
+    color: #1E5D99;
+    text-align: center;
+}
+
+mat-grid-tile img {
+    width: 100%;
+    height: 100%;
+}
+
+.reward div h3 {
+    width: 100%;
+    font-size: 25px;
+    color: #1E5D99;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account {
+    position: relative;
+    height: auto;
+    width: 100%;
+    background: #1E5D99;
+}
+
+.account h1 {
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.account .accGrid {
+    margin: 30px;
+}
+
+.account mat-grid-list mat-grid-tile h2 {
+    font-size: 40px;
+    margin-top: -30%;
+    color: white;
+}
+
+.account mat-grid-list mat-grid-tile img {
+    height: 30%;
+    width: 50%;
+}
+
+.account mat-grid-list mat-grid-tile h6 {
+    font-size: 20px;
+    margin-top: 80%;
+    margin-left: -50%;
+    color: white;
+}
+
+.Questions {
+    width: 100%;
+    text-align: center;
+    color: #1E5D99;
+}
+
+.Questions h1 {
+    font-size: 50px;
+}
+
+.Questions h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.Questions h6 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.fdb {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 0;
+}
+
+.fdb .fdb-left {
+    width: 30%;
+    height: 100%;
+    margin-top: 5%;
+    margin-left: 2%;
+    color: #1E5D99;
+    position: absolute;
+}
+
+.fdb .fdb-left .fdb-left-img {
+    width: 100%;
+    height: 60%;
+}
+
+.fdb .fdb-left .fdb-left-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.fdb .fdb-right {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    margin-left: 30%;
+}
+
+.fdb .fdb-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.fdb .fdb-right h1 {
+    margin-top: -30%;
+    color: white;
+    margin-left: 20%;
+    font-size: 70px;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+    background: #1E5D99;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.section h1 {
+    font-weight: 600;
+}
+
+.section h2 {
+    font-weight: 600;
+}
+
+.section button {
+    color: #1E5D99;
+}
+
+@media only screen and (max-width: 450px) {
+    .banner {
+        height: 700px;
+    }
+    .banner .logo {
+        height: 250px;
+        width: 250px;
+        margin-left: 20%;
+    }
+    .banner .logo .text h1 {
+        font-size: 40px;
+    }
+    .about {
+        height: 900px;
+    }
+    .about .about-left {
+        font-size: 18px;
+        margin-top: -850px;
+        margin-left: 5px;
+    }
+    .about .about-db {
+        margin-top: -900px;
+        margin-left: 58%;
+    }
+    .about .about-db h1 {
+        font-size: 25px;
+    }
+    .about .about-db .about-logo {
+        height: 150px;
+        width: 150px;
+    }
+    .why {
+        height: 500px;
+        padding: 1%;
+    }
+    .why h1 {
+        font-size: 30px;
+    }
+    .why .why-img {
+        width: 95%;
+        margin-left: 0;
+        height: 400px;
+    }
+    .reward h1 {
+        font-size: 25px;
+    }
+    .account {
+        height: 300px;
+    }
+    .account h1 {
+        font-size: 30px;
+    }
+    .account mat-grid-list mat-grid-tile {
+        height: auto;
+        margin-top: -190%;
+    }
+    .account mat-grid-list mat-grid-tile h2 {
+        font-size: 40px;
+        margin-top: -40%;
+    }
+    .account mat-grid-list mat-grid-tile img {
+        display: none;
+    }
+    .account mat-grid-list mat-grid-tile h6 {
+        font-size: 12px;
+        margin-top: 30%;
+        margin-left: 2%;
+        font-weight: 200;
+    }
+    .Questions {
+        padding: 1%;
+        width: 95%;
+    }
+    .Questions h1 {
+        font-size: 25px;
+    }
+    .Questions h4 {
+        font-size: 17px;
+        font-weight: 900;
+    }
+    .Questions h6 {
+        font-size: 15px;
+    }
+    .fdb .fdb-left .fdb-left-img {
+        height: 150px;
+        width: 150px;
+    }
+    .fdb .fdb-left h1 {
+        font-size: 25px;
+    }
+    .fdb .fdb-right {
+        width: 60%;
+        margin-left: 40%;
+    }
+    .fdb .fdb-right h1 {
+        font-size: 40px;
+        margin-top: -350px;
+    }
+    .section {
+        width: 96%;
+    }
+}

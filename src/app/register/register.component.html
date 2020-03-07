@@ -1,0 +1,124 @@
+<div class="body">
+    <div class="bg-img">
+        <!-- <div class="mhead">
+        <h1>DASH BACK</h1>
+    </div>
+    <div class="head">
+        <h1>Register</h1>
+    </div> -->
+        <div class="login-design">
+            <h1>WELCOME TO <br> DASHBACK
+            </h1>
+            <h3>Register</h3>
+            <div class="form">
+                <span>{{Msg}}</span>
+                <!-- <span>{{LoginId}}</span> -->
+                <mat-accordion class='example-headers-align'>
+
+
+                    <form class="login-input" [formGroup]='detail' (ngSubmit)='members()'>
+                        <mat-form-field class="mat-form-field-style">
+                            <input matInput type="text" placeholder="Name" formControlName='name'>
+                        </mat-form-field><br>
+                        <mat-form-field class="mat-form-field-style">
+                            <input matInput type="email" placeholder="Email" formControlName='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </mat-form-field><br>
+                        <mat-form-field class="mat-form-field-style">
+                            <input matInput type="phone" placeholder="Mobile No." formControlName='mobile' pattern="[0-9]{10}">
+                        </mat-form-field><br>
+                        <!-- Forget Password -->
+                        <!-- <label (click)='Forgot()'>Forgotten Password</label> <br> -->
+                        <!-- sponser details -->
+                        <div class="sponser-input" *ngIf="sponser == true">
+                            <!--*ngIf="sponser == true" (fields will be disabled if we direct register)-->
+                            <mat-form-field>
+                                <input matInput type="text" placeholder='Sponser Id' formControlName='sponserId'>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput type="text" placeholder="Sponser Name" formControlName='sponserName'>
+                            </mat-form-field>
+
+                        </div>
+                        <!-- Register button  -->
+                        <button mat-stroked-button color='white' type="submit" style="float: right; margin-top: 8%;" [disabled]="!detail.valid">Register</button>
+                        <!-- Login Button -->
+                        <button mat-stroked-button color='white' style="float: left; margin-top: 8%;" routerLink="/login">Login</button>
+                        <br>
+
+                        <!-- <label (click)='register()'>Register</label> -->
+                    </form>
+
+
+
+
+                    <!-- <form [formGroup]="detail" (ngSubmit)='members()'> -->
+                    <!-- <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Personal Information
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Type Your Personal Info
+                                    <mat-icon>account_circle</mat-icon>
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                       <mat-form-field>
+                                <input matInput type="text" placeholder="Enter ID" formControlName='id'>
+                            </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Enter Your Full Name" formControlName='name'>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="tel" placeholder="Enter Your Mobile No." formControlName='mobile' pattern="[0-9]{10}">
+                        </mat-form-field><br>
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Enter Your Email Id" formControlName='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </mat-form-field>
+                        </mat-expansion-panel>  -->
+                    <!--sponser-->
+                    <!-- <mat-expansion-panel hideToggle *ngIf="sponser == true">
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    Sponser Information
+                                </mat-panel-title>
+                                <mat-panel-description>
+                                    Check Information
+                                    <mat-icon>person</mat-icon>
+                                </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <mat-form-field>
+                                <input matInput type="text" [disabled] placeholder='Sponser Id' formControlName='sponserId'>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput type="text" [disabled] placeholder="Sponser Name" formControlName='sponserName'>
+                            </mat-form-field>
+                        </mat-expansion-panel> -->
+                    <!-- <mat-expansion-panel hideToggle>
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                Legal Details
+                            </mat-panel-title>
+                            <mat-panel-description>
+                                Enter Aadhar and Pan no.
+                                <mat-icon>subtitles</mat-icon>
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Enter Your Aadhar No." formControlName='aadhar'>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput type="text" placeholder="Enter Your PAN  No." formControlName='pan'>
+                        </mat-form-field>
+                    </mat-expansion-panel>
+                    <mat-action-row>
+                        <button mat-button type="submit" [disabled]="!detail.valid" color="primary">Submit</button>
+                    </mat-action-row>
+                    </form> -->
+                    <span>{{Msg}}</span>
+                    <!-- <span>{{LoginId}}</span> -->
+
+                </mat-accordion>
+            </div>
+        </div>
+    </div>
+</div>

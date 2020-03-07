@@ -1,0 +1,113 @@
+.body{
+    position: absolute;
+    margin-top: 1%;
+    padding-left: 2%;
+    padding-right: 5%;
+    width: 100%;
+    height: 90%;
+    background-color: #ECF0F5;
+    overflow-y: scroll;
+}
+.head{
+    margin-left: 5%;
+    font-size: 20px;
+}
+.row{
+    background-color: rgb(53, 62, 116);
+    color: white;
+    width: 250px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-right: 5px;
+    padding-bottom: 9px;
+    margin: 10px;
+}
+.row mat-icon{
+    float: right;
+    margin-top: -25%;
+    margin-right: 30%;
+    font-size: 90px;
+}
+.row h3{
+    float: right;
+}
+.col2{
+    position: relative;
+    margin-left: 300px;
+    margin-top: -240px;
+}
+
+.h h3{
+    margin-top: -165px;
+}
+.h1 mat-icon{
+    margin-top: -52%;
+}
+.h mat-icon{
+    margin-top: -100%;
+}
+ .h1 h3{
+    margin-top: -45px;
+}
+.col3{
+    margin-top: -240px;
+    margin-left: 600px;
+}
+.col4{
+    margin-top: -240px;
+    margin-left: 900px;
+}
+mat-icon{
+    opacity: .5;
+}
+@media only screen and (max-width: 600px) {
+    .body {
+        margin-top: 0;
+        margin-left: 0;
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%;
+        height: 1200px;
+        overflow-x: scroll !important;
+    }
+    h1{
+        font-size: 23px;
+    }
+    .row{
+        margin-left: 10%;
+        width: 70%;
+    }
+    .row mat-icon{
+        font-size: 50px;
+        margin-top: -20%;
+        margin-right: 10%;
+    }
+    .col2{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .h h3{
+        margin-top: 0;
+    }
+    .h mat-icon{
+        margin-top: -20%;
+    }
+    .h1 h3{
+        margin-top: 0;
+    }
+    .h1 mat-icon{
+        margin-top: -20%;
+    }
+    .col3{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .col4{
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .head{
+        font-size: 15px;
+    }
+  }

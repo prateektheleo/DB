@@ -1,0 +1,74 @@
+<div class="body">
+    <div class="bg-img">
+        <!-- <div class="db-icon">
+            <img src="../../assets/logo2.png" alt="dashback-icon" style="width: 20%;">
+        </div> -->
+        <!-- login panel  -->
+        <div class="login-design">
+            <h1>WELCOME TO <br> DASHBACK
+            </h1>
+            <!-- form tag -->
+            <form class="login-input" [formGroup]='login' (ngSubmit)='loginf()'>
+                <mat-form-field class="mat-form-field-style">
+                    <input matInput type="text" placeholder="Login ID" formControlName='mobile'>
+                </mat-form-field><br>
+                <mat-form-field class="mat-form-field-style">
+                    <input matInput type="password" placeholder="Password" formControlName='password'>
+                </mat-form-field><br>
+                <!-- Forget Password -->
+                <label (click)='Forgot()'>Forgotten Password</label> <br>
+                <!-- Login Button -->
+                <button mat-stroked-button color='white' type="submit" style="float: left; margin-top: 8%;" [disabled]="!login.valid">Login</button>
+                <!-- Register button  -->
+                <button mat-stroked-button color='white' style="float: right; margin-top: 8%;" routerLink="/register">Register</button>
+                <br>
+
+                <!-- <label (click)='register()'>Register</label> -->
+            </form>
+            <!-- -->
+            <!-- <form [formGroup]='changePass' (ngSubmit)='change()'>
+                <div>
+                    <input type="text" placeholder="Enter OTP Sent To Your Email"> <br>
+                    <button (click)='otp()'>Submit</button>
+                </div>
+                <div>
+                    <input type="password" placeholder="Enter New password"> <br>
+                    <button type="submit">Submit</button>
+                </div>
+            </form> -->
+            <!---->
+            <span [ngClass]="{'msg-error':Error == true, 'msg-style' : Error == false}">{{Msg}}</span>
+
+        </div>
+
+        <!-- <div class="form">
+            <div>
+                <form [formGroup]='login' (ngSubmit)='loginf()'>
+                    <mat-form-field>
+                        <input matInput type="text" placeholder="Type your Login ID" formControlName='mobile'>
+                    </mat-form-field><br>
+                    <mat-form-field>
+                        <input matInput type="password" placeholder="Type your Password" formControlName='password'>
+                    </mat-form-field><br>
+                    <button mat-raised-button color='accent' type="submit">Login</button> <br>
+                    <label (click)='Forgot()'>Forgot Password</label> <br>
+                    <label (click)='register()'>Register</label>
+                </form>
+
+               
+            </div>
+            <!-- <div>
+          <form [formGroup]='changePass' (ngSubmit)='change()'>
+              <div>
+                  <input type="text" placeholder="Enter OTP Sent To Your Email"> <br>
+                  <button (click)='otp()'>Submit</button>
+              </div>
+              <div>
+                  <input type="password" placeholder="Enter New password"> <br>
+                  <button type="submit">Submit</button>
+              </div>
+          </form>
+      </div> -->
+    </div>
+
+</div>

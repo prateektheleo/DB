@@ -1,0 +1,59 @@
+<div class="body">
+    <div class="head">
+        <h1>Payout</h1>
+    </div>
+    <div class="tablef">
+        <table>
+            <tr class="tableHead">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Joining Date</th>
+                <th>Package</th>
+                <th>Account Status</th>
+                <th>Wallet Bal</th>
+                <th>Acc No.</th>
+                <th>Account Name</th>
+                <th>IFSC</th>
+                <th>Payout</th>
+            </tr>
+            <tr class="tablec" *ngFor="let r of resData">
+                <th>{{r.loginId}}</th>
+                <th>{{r.name}}</th>
+                <th>{{r.mobile}}</th>
+                <th>{{r.joiningDate}}</th>
+                <th>{{r.package}}</th>
+                <th>{{r.status}}</th>
+                <!-- <th>
+                    <form [formGroup]='act' (ngSubmit)='activ(r.mobile)'>
+                        <mat-form-field>
+                            <mat-label>Select Package</mat-label>
+                            <select matNativeControl required formControlName='package'>
+                              <option value="" disabled></option>
+                              <option value="500">500</option>
+                              <option value="1000">1000</option>
+                              <option value="2000">2000</option>
+                              <option value="5000">5000</option>
+                            </select>
+                          </mat-form-field>
+                          <button mat-button type="submit" [disabled]='!act.valid'>Submit</button>
+                    </form>
+                </th> -->
+                <th>{{r.walletBal}}</th>
+                <th>{{r.accNo}}</th>
+                <th>{{r.accName}}</th>
+                <th>{{r.ifsc}}</th>
+                <th>
+                    <form [formGroup]='act' (ngSubmit)='activ(r.mobile)'>
+                      <input matInput type="tel" placeholder="amt" formControlName='amt'>  
+                      <button mat-button type="submit" [disabled]='!act.valid'>Submit</button>
+                    </form>
+                </th>
+                <!-- <th>{{r.password}}</th> -->
+                <th>
+                  <mat-icon (click)='delete(r._id)'>delete</mat-icon>
+                </th>
+            </tr>
+        </table>
+    </div>
+  </div>

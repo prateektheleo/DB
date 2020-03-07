@@ -1,0 +1,56 @@
+<div class="body">
+  <div class='head'>
+      <h1>Dashboard</h1>
+  </div>
+  <div>
+      <div class="col">
+          <div class="row">
+              <h2>{{count?.length || 0}}</h2>
+              <mat-icon >person</mat-icon>
+              <h3>Total Direct Sponser</h3>
+          </div>
+          <div class="row">
+              <h2>{{team?.length || 0}}</h2>
+              <mat-icon>group</mat-icon>
+              <h3>Total Team</h3>
+          </div>
+         
+      </div>
+      <div class="col2">
+          <div class="row h">
+              <h2>{{earning || 0}}</h2>
+              <mat-icon>trending_up</mat-icon>
+              <h3>Total earning</h3>
+          </div>
+          <div class="row h1">
+              <h2>{{wallet || 0}}</h2>
+              <mat-icon>account_balance_wallet</mat-icon>
+              <h3>Wallet Balance</h3>
+          </div>
+      </div>
+      <div class="col3">
+          <div class="row h">
+              <h2>{{level || 0}}</h2>
+              <mat-icon>timeline</mat-icon>
+              <h3>Level Income</h3>
+          </div>
+          <div class="row h1">
+            <h2>{{directI || 0}}</h2>
+            <mat-icon>trending_up</mat-icon>
+            <h3>Direct Income</h3>
+          </div>
+      </div>
+      <div class="col4">
+          <div class="row h">
+              <h2>{{0}}</h2>
+              <mat-icon>timeline</mat-icon>
+              <h3>Activated Account</h3>
+          </div>
+          <div class="row h1">
+            <h2>{{widthraw || 0}}</h2>
+            <mat-icon>timeline</mat-icon>
+            <h3>Withdrwal Income</h3>
+        </div>
+      </div>
+  </div>
+</div>

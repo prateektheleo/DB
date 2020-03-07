@@ -1,0 +1,85 @@
+<div class="body">
+  <div class="logo">
+      <img src="../../assets/dashback website top.png" alt="">
+  </div>
+</div>
+<button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon class="menu">menu</mat-icon>
+</button>
+<!-- <button mat-button [matMenuTriggerFor]="" class="name">
+    <mat-icon>error_outline</mat-icon>
+</button> -->
+<button mat-button [matMenuTriggerFor]="beforeMenu" class="name">
+    <mat-icon>account_circle</mat-icon>
+</button>
+<mat-menu #beforeMenu="matMenu" xPosition="after" class="db">
+    <mat-icon class="ic">account_circle</mat-icon><br>
+    <span class="dot">.</span><span class="in">Inactive</span> <br>
+    <span class="na">{{name}}</span>
+    <button mat-stroked-button color="warn" class="bt1">
+        <span (click)='signOut()'>Sign Out</span>
+    </button>
+    <button mat-stroked-button color="primary" class="bt" routerLink='member-profile'>
+        <span>Profile</span>
+    </button>
+</mat-menu>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink='dashboard'>
+        <mat-icon>dashboard</mat-icon>
+        <span >Dashboard</span>
+    </button>
+
+    <button mat-menu-item routerLink='link'>
+        <mat-icon>insert_link</mat-icon>
+        <span >Send Free Link</span>
+    </button>
+    <button mat-menu-item routerLink='activate' class="act">
+        <mat-icon>school</mat-icon>
+        <span >Activate Now</span>
+    </button>
+    <button mat-menu-item [matMenuTriggerFor]="team">
+        <mat-icon>group</mat-icon>
+        <span >Team</span>
+    </button>
+    <button mat-menu-item [matMenuTriggerFor]="income">
+        <mat-icon>emoji_events</mat-icon>
+        <span >Income</span>
+    </button>
+    <button mat-menu-item routerLink='my-Team'>
+        <mat-icon>assignment</mat-icon>
+        <span >Payment History</span>
+    </button>
+    <button mat-menu-item routerLink='contact_us'>
+        <mat-icon>local_phone</mat-icon>
+        <span >Contact Us</span>
+    </button>
+</mat-menu>
+<mat-menu #income="matMenu">
+    <button mat-menu-item routerLink='income/level_income'>
+        <mat-icon>apartment</mat-icon>
+        <span>Level Income</span>
+    </button>
+    <button mat-menu-item routerLink='income/brokerage_income'>
+        <mat-icon>business_center</mat-icon>
+        <span>Brokerage Income</span>
+    </button>
+    <button mat-menu-item routerLink='income/rewards' disabled>
+        <mat-icon>local_bar</mat-icon>
+        <span>Rewards</span>
+    </button>
+    <button mat-menu-item routerLink='income/leadership_club' disabled>
+        <mat-icon>emoji_people</mat-icon>
+        <span>Leadership Club</span>
+    </button>
+</mat-menu>
+<mat-menu #team="matMenu">
+    <button mat-menu-item routerLink='my-Direct'>
+        <mat-icon>folder_shared</mat-icon>
+        <span >My Direct</span>
+    </button>
+    <button mat-menu-item routerLink='my-Team'>
+        <mat-icon>group</mat-icon>
+        <span >My Team</span>
+    </button>
+</mat-menu>
+<router-outlet></router-outlet>
